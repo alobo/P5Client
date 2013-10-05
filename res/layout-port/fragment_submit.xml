@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+	        android:id="@+id/fragment_submit_eventKeyPrompt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="150sp"
+	        android:text="Identify the EngSoc event:"
+	        android:textSize="60sp" />
+    
+    <RelativeLayout
+        android:id="@+id/fragment_submit_QRContainer"
+        android:layout_width="415dp"
+        android:layout_marginBottom="50sp"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/fragment_submit_eventKeyEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100sp"
+            android:layout_marginRight="20sp"
+            android:hint="Event Key"
+            android:textSize="70sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/fragment_submit_QRButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="QR" />
+
+    </RelativeLayout>
+    
+	
+    
+    <Button android:id="@+id/fragment_submit_submitButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="60sp"
+	        android:text="Check In" />
+
+</LinearLayout>
